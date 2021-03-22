@@ -15,8 +15,7 @@ output:
 ---
  
 I am an Illustrator | Digital Artist | Painter living in Bhopal, India. 
-Currently I work on the Oculus team at Facebook. I love talking about baseball, 
-true crime podcasts, and causal inference.
+
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE,fig.height=2}
 library(leaflet)
