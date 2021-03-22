@@ -85,22 +85,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>My Website: About this site</title>
+  <title> : About this site</title>
 
   <meta property="description" itemprop="description" content="Some additional details about the website"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="My Website: About this site"/>
+  <meta property="og:title" content=" : About this site"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="Some additional details about the website"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="My Website"/>
+  <meta property="og:site_name" content=" "/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="My Website: About this site"/>
+  <meta property="twitter:title" content=" : About this site"/>
   <meta property="twitter:description" content="Some additional details about the website"/>
 
   <!--/radix_placeholder_meta_tags-->
@@ -2034,6 +2034,435 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </script>
 
+  <style type="text/css">
+  /* base variables */
+
+  /* Edit the CSS properties in this file to create a custom
+     Distill theme. Only edit values in the right column
+     for each row; values shown are the CSS defaults.
+     To return any property to the default,
+     you may set its value to: unset
+     All rows must end with a semi-colon.                      */
+
+  /* Optional: embed custom fonts here with `@import`          */
+  /* This must remain at the top of this file.                 */
+
+
+
+  html {
+    /*-- Main font sizes --*/
+    --title-size:      50px;
+    --body-size:       1.06rem;
+    --code-size:       14px;
+    --aside-size:      12px;
+    --fig-cap-size:    13px;
+    /*-- Main font colors --*/
+    --title-color:     #000000;
+    --header-color:    rgba(0, 0, 0, 0.8);
+    --body-color:      rgba(0, 0, 0, 0.8);
+    --aside-color:     rgba(0, 0, 0, 0.6);
+    --fig-cap-color:   rgba(0, 0, 0, 0.6);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    --heading-font:    sans-serif;
+    --mono-font:       monospace;
+    --body-font:       sans-serif;
+    --navbar-font:     sans-serif;  /* websites + blogs only */
+  }
+
+  /*-- ARTICLE METADATA --*/
+  d-byline {
+    --heading-size:    0.6rem;
+    --heading-color:   rgba(0, 0, 0, 0.5);
+    --body-size:       0.8rem;
+    --body-color:      rgba(0, 0, 0, 0.8);
+  }
+
+  /*-- ARTICLE TABLE OF CONTENTS --*/
+  .d-contents {
+    --heading-size:    18px;
+    --contents-size:   13px;
+  }
+
+  /*-- ARTICLE APPENDIX --*/
+  d-appendix {
+    --heading-size:    15px;
+    --heading-color:   rgba(0, 0, 0, 0.65);
+    --text-size:       0.8em;
+    --text-color:      rgba(0, 0, 0, 0.5);
+  }
+
+  /*-- WEBSITE HEADER + FOOTER --*/
+  /* These properties only apply to Distill sites and blogs  */
+
+  .distill-site-header {
+    --title-size:       18px;
+    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-size:        15px;
+    --hover-color:      white;
+    --bkgd-color:       #0F2E3D;
+  }
+
+  .distill-site-footer {
+    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-size:        15px;
+    --hover-color:      white;
+    --bkgd-color:       #0F2E3D;
+  }
+
+  /*-- Additional custom styles --*/
+  /* Add any additional CSS rules below                      */
+  </style>
+  <style type="text/css">@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:300, 300i&display=swap');
+
+  @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
+  @import url('https://fonts.googleapis.com/css?family=DM+Mono&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+  body {
+    font-family: "Work Sans";
+    /*color: #1f1f1f;*/
+    color: #405359;
+    font-size: 16px;
+  }
+
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Libre Baskerville";
+    letter-spacing: 2px;
+    line-height: 2rem; /* increases, so wrapping headers don't overlap */ 
+    color: #096B72;
+    font-weight: 300;
+  }
+
+  d-title {
+    padding-top: 13rem; /*so that navbar doesn't overlap fixed title */
+  }
+
+  d-title h1,
+  d-article h2 {
+  	font-weight: 300;
+  }
+
+  d-article div.sourceCode code, 
+  d-article pre code {
+  	font-family: "DM Mono", monospace;
+  	font-size: 1rem;
+  }
+
+  /* --------------Navbar-------------------- */
+
+
+  /* background-image for fade-to-white color of navbar */
+  .distill-site-header{ 
+    padding: 40px 0px;
+    background-image: url('images/back3.jpg');   
+    background-repeat: no-repeat;
+    background-color: transparent;
+    font-size: 15px;
+    font-family: "Ubuntu";
+    font: "Ubuntu";
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .distill-site-header .logo img{
+    max-height: 40px; /* Makes logo bigger, default was 20px */
+  }
+
+  /* dropdown navbar color on mobile */
+
+  @media screen and (max-width: 768px){
+    .distill-site-header.responsive {
+        background: rgba(255,255,255,0.99);
+    }
+  }
+
+
+  /* Navbar Links with Animated Hover */ 
+
+
+  .distill-site-header a { /* A normal link in navbar */
+    color: #1f1f1f;
+    display: inline-block; /* This line and line below is so pseudo-element will work later */
+    position: relative; 
+    text-decoration: none;
+    padding-left: 0px; /* overrides default so animation looks Ok */
+    padding-right: 0px; /* overrides default so animation looks Ok */
+    margin: 10px 14px; /* replaces default padding values for margin values */
+  }
+
+
+  .distill-site-header a:hover { /* (unanimated) hover behavior for navbar links */
+    color: #0c2b9c;
+    padding-left: 0px; /* overrides default so animation looks Ok */
+    padding-right: 0px; /* overrides default so animation looks Ok */
+    margin: 10px 14px; /* replaces default padding values for margin values */
+  }
+
+  .distill-site-header a:before { /*Creates pseudoelement line under link */
+    background-color: #787878;
+    content: '';
+    height: 1px; 
+    position: absolute;
+    bottom: -1px;
+    transition: width 0.3s ease-in-out; /* animate the width */
+    width: 100%;
+  }
+
+  .distill-site-header a:hover:before {
+    width: 0; /* Shrinks width of pseudoelement to 0 when hovered */
+  }
+
+  /* Makes sure animation does NOT apply to Title or Logo links (or toggle on mobile) */
+
+  .distill-site-header a.title:before, .distill-site-nav a.logo:before, a.nav-toggle:before {
+    display: none;
+  }
+
+  .distill-site-header a.title, .distill-site-nav a.logo {
+    padding: 10px 0px;
+    margin: 10px 14px;
+  }
+
+
+  /* No navbar links on mobile except title and nav-toggle */
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header a, .distill-site-header .nav-dropdown {
+      display: none;
+    }
+    
+    .distill-site-header a.title, .distill-site-header a.nav-toggle {
+      display: inline-block;
+      padding: 10px 0px;
+      margin: 10px 14px; 
+    }
+  }
+
+  /* -------------Appendix---------------- */
+
+  d-appendix {
+    background-color: #e6f3fc;
+    border-top: none !important;
+  }
+
+  /* -------------Footer------------------*/
+
+  .distill-site-footer {
+    color: #f7f7f7b0;
+    background-color: #1f1f1f;
+    margin-top: 0px;
+    padding: 50px 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 12px;
+    
+  }
+
+  d-byline div.byline.grid div p,
+  d-byline,
+  d-byline p,
+  p.author,
+  p.affiliation,
+  d-byline h3,
+  .d-toc,
+  .d-toc-header,
+  .d-toc ul,
+  d-appendix p {
+  	font-size: 0.9rem;
+  }
+
+  d-appendix h3 + * {
+  	margin-top: 1.5em !important;
+  }
+
+
+  /*----- COLORED LIST BULLET----*/
+
+  d-article ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+  d-article ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #79beee; /* Change the color */
+    font-weight: normal; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1.5em; /* Also needed for space (tweak if needed) */
+    margin-left: -1.5em; /* Also needed for space (tweak if needed) */
+  }
+
+  d-article ul > li > p {
+    display: inline; /* to have content show up next to bullet */
+    line-height: 1.6em;
+  }
+
+  d-article ul > li { /*to add back in space between bullet items that I took away by making p display inline */
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .d-toc ul li::before {
+    content: " ";  /* Remove toc bullets */
+  }</style>
+  <style type="text/css">
+  /* base style */
+
+  /* FONT FAMILIES */
+
+  :root {
+    --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  body,
+  .posts-list .post-preview p,
+  .posts-list .description p {
+    font-family: var(--body-font), var(--body-default);
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .posts-list .post-preview h2,
+  .posts-list .description h2 {
+    font-family: var(--heading-font), var(--heading-default);
+  }
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: var(--mono-font), var(--mono-default);
+  }
+
+
+  /*-- TITLE --*/
+  d-title h1,
+  .posts-list > h1 {
+    color: var(--title-color, black);
+  }
+
+  d-title h1 {
+    font-size: var(--title-size, 50px);
+  }
+
+  /*-- HEADERS --*/
+  d-article h1,
+  d-article h2,
+  d-article h3,
+  d-article h4,
+  d-article h5,
+  d-article h6 {
+    color: var(--header-color, rgba(0, 0, 0, 0.8));
+  }
+
+  /*-- BODY --*/
+  d-article > p,  /* only text inside of <p> tags */
+  d-article > ul, /* lists */
+  d-article > ol {
+    color: var(--body-color, rgba(0, 0, 0, 0.8));
+    font-size: var(--body-size, 1.06rem);
+  }
+
+
+  /*-- CODE --*/
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-size: var(--code-size, 14px);
+  }
+
+  /*-- ASIDE --*/
+  d-article aside {
+    font-size: var(--aside-size, 12px);
+    color: var(--aside-color, rgba(0, 0, 0, 0.6));
+  }
+
+  /*-- FIGURE CAPTIONS --*/
+  figure .caption,
+  figure figcaption,
+  .figure .caption {
+    font-size: var(--fig-cap-size, 13px);
+    color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
+  }
+
+  /*-- METADATA --*/
+  d-byline h3 {
+    font-size: var(--heading-size, 0.6rem);
+    color: var(--heading-color, rgba(0, 0, 0, 0.5));
+  }
+
+  d-byline {
+    font-size: var(--body-size, 0.8rem);
+    color: var(--body-color, rgba(0, 0, 0, 0.8));
+  }
+
+  d-byline a,
+  d-article d-byline a {
+    color: var(--body-color, rgba(0, 0, 0, 0.8));
+  }
+
+  /*-- TABLE OF CONTENTS --*/
+  .d-contents nav h3 {
+    font-size: var(--heading-size, 18px);
+  }
+
+  .d-contents nav a {
+    font-size: var(--contents-size, 13px);
+  }
+
+  /*-- APPENDIX --*/
+  d-appendix h3 {
+    font-size: var(--heading-size, 15px);
+    color: var(--heading-color, rgba(0, 0, 0, 0.65));
+  }
+
+  d-appendix {
+    font-size: var(--text-size, 0.8em);
+    color: var(--text-color, rgba(0, 0, 0, 0.5));
+  }
+
+  d-appendix d-footnote-list a.footnote-backlink {
+    color: var(--text-color, rgba(0, 0, 0, 0.5));
+  }
+
+  /*-- WEBSITE HEADER + FOOTER --*/
+  .distill-site-header .title {
+    font-size: var(--title-size, 18px);
+    font-family: var(--navbar-font), var(--heading-default);
+  }
+
+  .distill-site-header a,
+  .nav-dropdown .nav-dropbtn {
+    font-family: var(--navbar-font), var(--heading-default);
+  }
+
+  .nav-dropdown .nav-dropbtn {
+    color: var(--text-color, rgba(255, 255, 255, 0.8));
+    font-size: var(--text-size, 15px);
+  }
+
+  .distill-site-header a:hover,
+  .nav-dropdown:hover .nav-dropbtn {
+    color: var(--hover-color, white);
+  }
+
+  .distill-site-header {
+    font-size: var(--text-size, 15px);
+    color: var(--text-color, rgba(255, 255, 255, 0.8));
+    background-color: var(--bkgd-color, #0F2E3D);
+  }
+
+  .distill-site-footer {
+    font-size: var(--text-size, 15px);
+    color: var(--text-color, rgba(255, 255, 255, 0.8));
+    background-color: var(--bkgd-color, #0F2E3D);
+  }
+
+  .distill-site-footer a:hover {
+    color: var(--hover-color, white);
+  }</style>
   <!--/radix_placeholder_distill-->
   <script src="site_libs/header-attrs-2.7.4/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
@@ -2063,11 +2492,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="index.html" class="title">My Website</a>
+<a class="logo" href="index.html">
+<img src="images/main_logo.png" alt="Logo"/>
+</a>
+<a href="index.html" class="title"> </a>
+<a href="index.html">Pastel and Pop</a>
+<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
+<a href="gallery.html">Gallery</a>
+<a href="aboutme.html">About Me</a>
+<a href="https://www.instagram.com/pastel_and_pop/">
+<i class="fab fa-instagram" aria-hidden="true"></i>
+</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>

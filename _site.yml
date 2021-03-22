@@ -1,12 +1,22 @@
 name: "Pastel_Pop"
-title: "My Website"
+title: " "
 description: |
   My Website
 output_dir: "_site"
+theme:  webtheme.css
 navbar:
-  right:
-    - text: "Home"
+  logo:
+    image: "images/main_logo.png"
+    href: index.html
+  left:
+    - text: "Pastel and Pop"
       href: index.html
-    - text: "About"
-      href: about.html
+  right:
+
+    - text: "Gallery"
+      href: gallery.html
+    - text: "About Me"
+      href: aboutme.html
+    - icon: fab fa-instagram
+      href: https://www.instagram.com/pastel_and_pop/
 output: distill::distill_article

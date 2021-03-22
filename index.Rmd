@@ -1,15 +1,23 @@
 ---
-title: "My Website"
-description: |
-  Welcome to the website. I hope you enjoy it!
+title: "Pastel and Pop"
+subtitle: "Art By Aishwarya Naidu"
+image: "images/img_main.jpg"
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/aishwarya-naidu-084b89183/"
+  - label: Instagram
+    url: "https://www.instagram.com/pastel_and_pop/"
+  - label: Email
+    url: "mailto:aishwarya.naidu26@gmail.com"
+
 site: distill::distill_website
+output:
+  postcards::trestles
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
 ```
 
+Hi  everyone
+i am aishwarya naidu
