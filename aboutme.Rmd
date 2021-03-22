@@ -3,13 +3,11 @@ title: "Aishwarya Naidu"
 image: "images/kittu.jpg"
 links:
   - label: LinkedIn
-    url: "https://linkedin.com/"
-  - label: Twitter
-    url: "https://twitter.com/"
+    url: "https://www.linkedin.com/in/aishwarya-naidu-084b89183/"
   - label: Instagram
     url: "https://www.instagram.com/pastel_and_pop/"
   - label: Email
-    url: "mailto:email@email.com"
+    url: "mailto:aishwarya.naidu26@gmail.com"
 output:
   postcards::jolla
 ---
