@@ -11,19 +11,7 @@ links:
 output:
   postcards::jolla
 ---
- 
+
 I am an Illustrator | Digital Artist | Painter living in Bhopal, India. 
 
-
-```{r echo=FALSE, message=FALSE, warning=FALSE,fig.height=2}
-library(leaflet)
-india_places <- data.frame(name=c("Bhopal"),
-                           lat=c(23.2599),
-                           lng=c(77.4126))
-india_places %>%
-    leaflet() %>%
-    addTiles() %>%
-    addMarkers(lng=77.4126, lat=23.2599, popup="My City") %>%
-  addCircles(weight=10,radius=100)
-```
 
