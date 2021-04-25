@@ -11,12 +11,13 @@ navbar:
   left:
     - text: "Pastel and Pop"
       href: index.html
-  right:
-
-    - text: "Gallery"
-      href: gallery.html
     - text: "About Me"
       href: aboutme.html
+    - text: "Gallery"
+      href: gallery.html
+
+  right:
+    search: true
     - icon: fab fa-instagram
       href: https://www.instagram.com/pastel_and_pop/
 output: distill::distill_article
