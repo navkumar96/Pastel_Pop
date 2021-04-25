@@ -1,18 +1,18 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 body {
-  font-family: 'Pacifico', cursive;
-  font: 'Pacifico';
+  font-family: 'Cabin', sans-serif;
+  font: 'Cabin';
   color: #405359;
   font-size: 16px;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Pacifico', cursive;
-  font: 'Pacifico';
+  font-family: 'Cabin', sans-serif;
   letter-spacing: 2px;
   line-height: 2rem; /* increases, so wrapping headers don't overlap */ 
   color: #096B72;
@@ -26,14 +26,14 @@ d-title {
 d-title h1,
 d-article h2 {
 	font-weight: 300;
-	font-family: 'Pacifico', cursive;
-  font: 'Pacifico';
+	font-family: 'Cabin', sans-serif;
+  font: 'Cabin';
 }
 
 d-article div.sourceCode code, 
 d-article pre code {
-	font-family: 'Pacifico', cursive;
-  font: 'Pacifico';
+	font-family: 'Cabin', sans-serif;
+  font: 'Cabin';
 	font-size: 1rem;
 }
 
@@ -43,7 +43,7 @@ d-article pre code {
 /* background-image for fade-to-white color of navbar */
 .distill-site-header{ 
   padding: 40px 0px;
-  background-image: url('images/back3.jpg');   
+  background-image: url('images/back.jpg');   
   background-repeat: no-repeat;
   background-color: transparent;
   font-family: 'Pacifico', cursive;
@@ -78,6 +78,8 @@ d-article pre code {
   padding-left: 0px; /* overrides default so animation looks Ok */
   padding-right: 0px; /* overrides default so animation looks Ok */
   margin: 10px 14px; /* replaces default padding values for margin values */
+  font-family: 'Cabin', sans-serif;
+  font: 'Cabin';
 }
 
 
@@ -86,6 +88,8 @@ d-article pre code {
   padding-left: 0px; /* overrides default so animation looks Ok */
   padding-right: 0px; /* overrides default so animation looks Ok */
   margin: 10px 14px; /* replaces default padding values for margin values */
+  font-family: 'Cabin', sans-serif;
+  font: 'Cabin';
 }
 
 .distill-site-header a:before { /*Creates pseudoelement line under link */
@@ -96,6 +100,8 @@ d-article pre code {
   bottom: -1px;
   transition: width 0.3s ease-in-out; /* animate the width */
   width: 100%;
+  font-family: 'Cabin', sans-serif;
+  font: 'Cabin';
 }
 
 .distill-site-header a:hover:before {
@@ -111,22 +117,16 @@ d-article pre code {
 .distill-site-header a.title, .distill-site-nav a.logo {
   padding: 10px 0px;
   margin: 10px 14px;
+  font-family: 'Cabin', sans-serif;
+  font: 'Cabin';
   
 }
-
+.dist
 
 /* No navbar links on mobile except title and nav-toggle */
 
 @media screen and (max-width: 768px) {
-  .distill-site-header a, .distill-site-header .nav-dropdown {
-    display: none;
-  }
-  
-  .distill-site-header a.title, .distill-site-header a.nav-toggle {
-    display: inline-block;
-    padding: 10px 0px;
-    margin: 10px 14px; 
-  }
+ 
 }
 
 /* -------------Appendix---------------- */
