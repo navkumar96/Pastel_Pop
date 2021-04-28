@@ -1,5 +1,5 @@
 ---
-title: "Pastel and Pop"
+title: "Aishwarya Naidu"
 subtitle: "Art By Aishwarya Naidu"
 image: "images/img_main.jpg"
 links:
@@ -8,7 +8,7 @@ links:
   - label: Instagram
     url: "https://www.instagram.com/pastel_and_pop/"
   - label: Email
-    url: "mailto:aishwarya.naidu26@gmail.com"
+    url: "mailto:anaidu2696@gmail.com"
 
 site: distill::distill_website
 output:
@@ -21,3 +21,16 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Hi  everyone
 i am aishwarya naidu
+
+
+
+
+
+
+
+
+
+
+
+
+

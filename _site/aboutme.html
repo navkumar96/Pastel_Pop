@@ -705,9 +705,7 @@
           /*-- Additional custom styles --*/
           /* Add any additional CSS rules below                      */
           </style>
-          <style type="text/css">
-
-          @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+          <style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
           @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
           body {
@@ -720,10 +718,10 @@
 
           h1, h2, h3, h4, h5, h6 {
             font-family: 'Cabin', sans-serif;
-            letter-spacing: 2px;
-            line-height: 2rem; /* increases, so wrapping headers don't overlap */ 
-            color: #096B72;
-            font-weight: 300;
+            letter-spacing: 6px;
+            line-height: 6rem; /* increases, so wrapping headers don't overlap */ 
+            color: #0eb6e8;
+            font-weight: bolder;
           }
 
           d-title {
@@ -749,21 +747,22 @@
 
           /* background-image for fade-to-white color of navbar */
           .distill-site-header{ 
-            padding: 40px 0px;
-            background-image: url('images/back.jpg');   
+            background-image: url('images/back3.jpg');   
             background-repeat: no-repeat;
             background-color: transparent;
-            font-family: 'Pacifico', cursive;
+            font-family: 'Cabin', sans-serif;
             font: 'Pacifico';
             font-size: 15px;
             font-weight: bold;
             letter-spacing: 2px;
+            --hover-color: #d6045e;
             text-transform: uppercase;
           }
 
           .distill-site-header .logo img{
-            max-height: 40px; /* Makes logo bigger, default was 20px */
+            max-height: 100px; /* Makes logo bigger, default was 20px */
           }
+
 
           /* dropdown navbar color on mobile */
 
@@ -772,6 +771,7 @@
                 background: rgba(255,255,255,0.99);
             }
           }
+
 
 
           /* Navbar Links with Animated Hover */ 
@@ -797,6 +797,7 @@
             margin: 10px 14px; /* replaces default padding values for margin values */
             font-family: 'Cabin', sans-serif;
             font: 'Cabin';
+            
           }
 
           .distill-site-header a:before { /*Creates pseudoelement line under link */
@@ -1068,18 +1069,15 @@
           <nav class="distill-site-nav distill-site-header">
           <div class="nav-left">
           <a class="logo" href="index.html">
-          <img src="images/main_logo.png" alt="Logo"/>
+          <img src="images/pop2.png" alt="Logo"/>
           </a>
           <a href="index.html" class="title"> </a>
-          <a href="index.html">Pastel and Pop</a>
-          <a href="aboutme.html">About Me</a>
-          <a href="gallery.html">Gallery</a>
+          <a href="index.html">About Me</a>
+          <a href="gallery.html">Pastels and Pop</a>
+          <a href="aboutme.html">My Creations</a>
           <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
           </div>
           <div class="nav-right">
-          <a href="https://www.instagram.com/pastel_and_pop/">
-          <i class="fab fa-instagram" aria-hidden="true"></i>
-          </a>
           <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
           </div>
           </nav>

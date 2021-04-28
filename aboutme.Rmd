@@ -8,10 +8,9 @@ links:
     url: "https://www.instagram.com/pastel_and_pop/"
   - label: Email
     url: "mailto:aishwarya.naidu26@gmail.com"
+
 output:
   postcards::jolla
 ---
 
 I am an Illustrator | Digital Artist | Painter living in Bhopal, India. 
-
-

@@ -6,18 +6,17 @@ output_dir: "_site"
 theme:  webtheme.css
 navbar:
   logo:
-    image: "images/main_logo.png"
+    image: "images/pop2.png"
     href: index.html
   left:
-    - text: "Pastel and Pop"
-      href: index.html
     - text: "About Me"
-      href: aboutme.html
-    - text: "Gallery"
+      href: index.html
+    - text: "Pastels and Pop"
       href: gallery.html
+    - text: "My Creations"
+      href: aboutme.html
 
   right:
-    - icon: fab fa-instagram
-      href: https://www.instagram.com/pastel_and_pop/
+    
       
 output: distill::distill_article
