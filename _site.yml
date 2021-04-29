@@ -6,15 +6,15 @@ output_dir: "_site"
 theme:  webtheme.css
 navbar:
   logo:
-    image: "images/pop2.png"
+    image: "images/pop1.png"
     href: index.html
   left:
     - text: "About Me"
       href: index.html
-    - text: "Pastels and Pop"
-      href: gallery.html
     - text: "My Creations"
-      href: aboutme.html
+      href: gallery.html
+    - text: "Contact"
+      href: writetous.html
 
   right:
     

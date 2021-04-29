@@ -1,0 +1,13 @@
+---
+title: "Write to Us"
+image: "images/mail.png"
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/aishwarya-naidu-084b89183/"
+  - label: Email
+    url: "mailto:anaidu2696@gmail.com"
+output:
+  postcards::trestles
+---
+
+![](images/contact_form.png){style="position:left;" width="600"}

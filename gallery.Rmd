@@ -2,6 +2,7 @@
 title: " "
 image: " "
 
+
 output:
   postcards::jolla
 ---
@@ -11,6 +12,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-# **Gallery**
+# **My Illustrations**
 
 [![alt text](images/gallery/1.jpg){style="padding:5px;" width="200"}](https://www.instagram.com/p/CMJQCAggtul/) ![alt text](images/gallery/11.jpg){style="padding:5px;" width="200"} [![alt text](images/gallery/16.jpg){style="padding:5px;" width="200"}](https://www.instagram.com/p/CCREdJ7pAVk/) [![alt text](images/gallery/18.jpg){style="padding:5px;" width="200"}](https://www.instagram.com/p/CCJJI2AJT0y/) [![alt text](images/gallery/20.jpg){style="padding:5px;" width="200"}](https://www.instagram.com/p/CClqWEDpa6v/) [![alt text](images/gallery/22.jpg){style="padding:5px;" width="200"}](https://www.instagram.com/p/CCyj0ZeJw2u/) [![alt text](images/gallery/23.jpg){style="padding:5px;" width="200"}](https://www.instagram.com/p/CCv6oS-ph1-/) [![alt text](images/gallery/24.jpg){style="padding:5px;" width="200"}](https://www.instagram.com/p/CC3oDvdJwsX/) [![alt text](images/gallery/25.jpg){style="padding:5px;" width="200"}](https://www.instagram.com/p/CC_ciAeJ_UE/) [![alt text](images/gallery/26.jpg){style="padding:5px;" width="200"}](https://www.instagram.com/p/CDB7wpeJeVu/) [![alt text](images/gallery/27.jpg){style="padding:5px;" width="200"}](https://www.instagram.com/p/CC1Eh2lpaMV/) [![alt text](images/gallery/28.jpg){style="padding:5px;" width="200"}](https://www.instagram.com/p/CDHFWMJpVE-/) [![alt text](images/gallery/29.jpg){style="padding:5px;" width="200"}](https://www.instagram.com/p/CDO0ggbpGxP/) [![alt text](images/gallery/30.jpg){style="padding:5px;" width="200"}](https://www.instagram.com/p/CDoipB2JUO_/) [![alt text](images/gallery/31.jpg){style="padding:5px;" width="200"}](https://www.instagram.com/p/CD3_YdjpIT1/)

@@ -1,0 +1,22 @@
+gallery---
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 2px;
+  line-height: 12rem;
+  color: #0eb6e8;
+  font-weight: bolder;
+  font-size: 5.5rem;
+}
+
+
+about me - 
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 2px;
+    line-height: 12rem;
+    color: #0eb6e8;
+      font-weight: bolder;
+    font-size: 5.5rem;
+  }
