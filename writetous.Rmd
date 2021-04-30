@@ -10,4 +10,4 @@ output:
   postcards::trestles
 ---
 
-![](images/contact_form.png){style="position:left;" width="600"}
+![](images/contact_form.png){style="align: left;" width="500"}

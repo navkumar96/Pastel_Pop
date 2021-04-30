@@ -17,20 +17,15 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+
 ```
 
-Hi  everyone
-i am aishwarya naidu
+## **About Me** {style="text-align: center;"}
 
+![](images/pop1.png){width="300"}
 
+Hi! My name is Aishwarya Naidu I am a freelancer and I create illustrations , logos, book cover designs, social media content and much more. Visit "my creations" page to have a peek. If you like my content and want something to create for you. Please feel free to contact me.
 
+I promise to deliver the best.
 
-
-
-
-
-
-
-
-
-
+![](images/text.png){width="300"}
