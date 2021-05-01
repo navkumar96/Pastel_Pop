@@ -746,7 +746,7 @@
           }
 
 
-          h1,h3, h4, h5, h6 {
+          h1,h3, h4, h5{
             font-family: 'Amatic SC', cursive;
             letter-spacing: 2px;
             line-height: 8.2rem; /* increases, so wrapping headers don't overlap */ 
@@ -759,6 +759,13 @@
            font-size: 4.5rem;
            line-height: 8.2rem;
            font-weight: bolder;
+          }
+          h6{
+            margin-top: 0;
+            margin-bottom: 1rem;
+            margin-left: -30rem;
+            margin-right: -30rem;
+            text-align: left;
           }
 
           d-title {
@@ -806,6 +813,9 @@
           @media screen and (max-width: 768px){
             .distill-site-header.responsive {
                 background: rgba(255,255,255,0.99);
+            }
+            h1,h3, h4, h5,h6,body,html{
+              width:100%;
             }
           }
 
