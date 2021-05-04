@@ -763,8 +763,8 @@
           h6{
             margin-top: 0;
             margin-bottom: 1rem;
-            margin-left: -30rem;
-            margin-right: -30rem;
+            margin-left: -20rem;
+            margin-right: -20rem;
             text-align: left;
           }
 
@@ -809,16 +809,45 @@
 
 
           /* dropdown navbar color on mobile */
-
-          @media screen and (max-width: 768px){
-            .distill-site-header.responsive {
-                background: rgba(255,255,255,0.99);
+          @media only screen and (max-width: 480px) {
+            html{
+              --title-size:20px;
+              --body-size:0.6rem;
             }
-            h1,h3, h4, h5,h6,body,html{
-              width:100%;
-            }
+            h6{
+              margin-top: 0;
+            margin-bottom: 1rem;
+            margin-left: -1rem;
+            margin-right: -1rem;
+            text-align: center;
           }
+            body{
+            width: 100%;
+            }
+            
+          } 
 
+          /* For devices with width between 481px and 768px, like larger phones and portrait tablets */
+          @media only screen and (min-width: 481px) {
+            
+          } 
+          @media screen and (max-width: 768px){
+            
+            h1, h3, h4, h5, h6, body, html {
+              margin-top: 0;
+              margin-bottom: 1rem;
+              margin-left: -1rem;
+              margin-right: -1rem;
+              text-align: center;
+          }
+            body{
+              width: 100%;
+          }
+            .distill-site-header{
+              width: 100%;
+            }
+            
+          }
 
 
           /* Navbar Links with Animated Hover */ 
@@ -880,9 +909,7 @@
 
           /* No navbar links on mobile except title and nav-toggle */
 
-          @media screen and (max-width: 768px) {
-           
-          }
+
 
           /* -------------Appendix---------------- */
 
